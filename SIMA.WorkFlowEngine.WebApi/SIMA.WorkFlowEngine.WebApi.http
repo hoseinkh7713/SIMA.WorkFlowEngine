@@ -1,0 +1,6 @@
+@SIMA.WorkFlowEngine.WebApi_HostAddress = http://localhost:5170
+
+GET {{SIMA.WorkFlowEngine.WebApi_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###

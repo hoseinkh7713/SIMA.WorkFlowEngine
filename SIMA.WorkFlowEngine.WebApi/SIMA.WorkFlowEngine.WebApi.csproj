@@ -1,0 +1,27 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <InvariantGlobalization>false</InvariantGlobalization>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.Authentication.JwtBearer" Version="8.0.0" />
+    <PackageReference Include="Scrutor" Version="4.2.2" />
+    <PackageReference Include="SIMA.Framework.Core" Version="1.0.8" />
+    <PackageReference Include="SIMA.Framework.WebApi" Version="1.0.3" />
+    <PackageReference Include="Swashbuckle.AspNetCore" Version="6.5.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\SIMA.WorkFlowEngine.Application.Contract\SIMA.WorkFlowEngine.Application.Contract.csproj" />
+    <ProjectReference Include="..\SIMA.WorkFlowEngine.Application.Query.Contract\SIMA.WorkFlowEngine.Application.Query.Contract.csproj" />
+    <ProjectReference Include="..\SIMA.WorkFlowEngine.Application.Query\SIMA.WorkFlowEngine.Application.Query.csproj" />
+    <ProjectReference Include="..\SIMA.WorkFlowEngine.Application\SIMA.WorkFlowEngine.Application.csproj" />
+    <ProjectReference Include="..\SIMA.WorkFlowEngine.Persistance.EF.Read\SIMA.WorkFlowEngine.Persistance.EF.Read.csproj" />
+    <ProjectReference Include="..\SIMA.WorkFlowEngine.Persistance.EF\SIMA.WorkFlowEngine.Persistance.EF.csproj" />
+  </ItemGroup>
+
+</Project>

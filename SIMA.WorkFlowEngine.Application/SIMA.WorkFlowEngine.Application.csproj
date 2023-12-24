@@ -1,0 +1,29 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="WorkFlow\WorkFlowCommandHandler.cs~RF3016f384.TMP" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="AutoMapper" Version="12.0.1" />
+    <PackageReference Include="AutoMapper.Extensions.Microsoft.DependencyInjection" Version="12.0.1" />
+    <PackageReference Include="Microsoft.IdentityModel.Tokens" Version="7.0.3" />
+    <PackageReference Include="Scrutor" Version="4.2.2" />
+    <PackageReference Include="SIMA.Framework.Common" Version="1.1.0" />
+    <PackageReference Include="SIMA.Framework.Core" Version="1.0.8" />
+    <PackageReference Include="System.IdentityModel.Tokens.Jwt" Version="7.0.3" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\SIMA.WorkFlowEngine.Application.Contract\SIMA.WorkFlowEngine.Application.Contract.csproj" />
+    <ProjectReference Include="..\SIMA.WorkFlowEngine.Domain\SIMA.WorkFlowEngine.Domain.csproj" />
+    <ProjectReference Include="..\SIMA.WorkFlowEngine.Persistance.EF.Read\SIMA.WorkFlowEngine.Persistance.EF.Read.csproj" />
+  </ItemGroup>
+
+</Project>

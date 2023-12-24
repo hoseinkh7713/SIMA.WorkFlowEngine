@@ -1,0 +1,19 @@
+﻿    <Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="SIMA.Framework.Common" Version="1.1.0" />
+    <PackageReference Include="SIMA.Framework.Core" Version="1.0.8" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\SIMA.WorkFlowEngine.Domain\SIMA.WorkFlowEngine.Domain.csproj" />
+    <ProjectReference Include="..\SIMA.WorkFlowEngine.Persistance.EF.Read\SIMA.WorkFlowEngine.Persistance.EF.Read.csproj" />
+  </ItemGroup>
+
+</Project>
